@@ -13,7 +13,6 @@ android {
         minSdk 31
         targetSdk 33
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
 
@@ -37,11 +36,6 @@ dependencies {
     implementation "androidx.core:core-ktx:$androix_core"
     implementation "androidx.appcompat:appcompat:$androix_appcompat"
     implementation "androidx.compose.material:material:$compose_version"
-
-    testImplementation "junit:junit:$junit"
-
-    androidTestImplementation "androidx.test.ext:junit:$android_junit"
-    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso"
 
     // Hilt dependencies
     implementation "com.google.dagger:hilt-android:$hilt_version"
